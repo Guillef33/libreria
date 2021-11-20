@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import books from "./books";
+import { Button } from "./Button";
 
 //CSS
 import "./index.css";
@@ -23,7 +24,7 @@ const Book = (props) => {
       <h4>{author}</h4>
       {props.children}
       <a href={url}>
-        <button className="btn-comprar">Comprar</button>
+        <Button className="btn-comprar">Comprar</Button>
       </a>
     </article>
   );

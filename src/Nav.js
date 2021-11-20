@@ -5,6 +5,7 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
+import { StyledNavLink } from "./StyledNavLink";
 
 // import logo from "logo.svg";
 
@@ -13,16 +14,20 @@ class Nav extends Component {
     return (
       <nav>
         <h2>
-          <NavLink to="/" className="HeroLink">
+          <StyledNavLink to="/" className="HeroLink">
             Libreria
-          </NavLink>
+          </StyledNavLink>
         </h2>
         <ul className="header-nav-list">
           <li>
-            <NavLink to="/catalogo" className="HeroLink">Catalogo</NavLink>
+            <StyledNavLink to="/catalogo" className="HeroLink">
+              Catalogo
+            </StyledNavLink>
           </li>
           <li>
-            <NavLink to="/contacto" className="HeroLink">Contacto</NavLink>
+            <StyledNavLink to="/contacto" className="HeroLink">
+              Contacto
+            </StyledNavLink>
           </li>
         </ul>
       </nav>

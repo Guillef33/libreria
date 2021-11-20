@@ -65,6 +65,10 @@ color:black;
   text-decoration: none;
   color: black;
 }
+ 
+.HeroLink a  {
+  text-decoration: none;
+}
 
 .header-nav-list li:last-child a {
   background-color: white;
