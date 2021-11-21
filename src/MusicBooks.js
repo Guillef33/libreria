@@ -4,6 +4,12 @@ import books from "./books";
 
 import { Button } from "./Button";
 
+function updateCarrito () {
+  console.log(`Se agrego al carrito`);
+}
+
+ // Quisiera agregar el titulo ${filteredBook.title}
+
 function MusicBooks() {
   return (
     <div>
@@ -18,7 +24,7 @@ function MusicBooks() {
             <h4>{filteredBook.author}</h4>
             <p className="Categoria">Genero: {filteredBook.category}</p>
             <a href={filteredBook.url}>
-              <Button className="btn-comprar">Comprar</Button>
+              <Button className="btn-comprar" onClick={updateCarrito}>Comprar</Button>
             </a>
           </article>
         ))}
@@ -31,13 +37,13 @@ function MusicList() {
   return (
     <>
       <section className="bookList">
-        {books.map((book) => (
+        {books.map((Musicbook) => (
           <MusicBooks
-            img={book.img}
-            title={book.title}
-            author={book.author}
-            id={book.id}
-            category={book.category}
+            img={Musicbook.img}
+            title={Musicbook.title}
+            author={Musicbook.author}
+            id={Musicbook.id}
+            category={Musicbook.category}
           />
         ))}
       </section>

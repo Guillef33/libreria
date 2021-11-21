@@ -4,41 +4,11 @@ import books from "./books";
 
 import { Button } from "./Button";
 
-// const books = [
-//   {
-//     id: "ab123",
-//     img: "https://images-na.ssl-images-amazon.com/images/I/41kuAx41bCL._SX329_BO1,204,203,200_.jpg",
-//     title: "The Storyteller: Tales of Life and Music",
-//     author: "David Grohl",
-//     category: "Music",
-//   },
-
-//   {
-//     id: "ab124",
-//     img: "https://images-na.ssl-images-amazon.com/images/I/41QhuwRJ43S._SX329_BO1,204,203,200_.jpg",
-//     title: "Taste: My Life Through Food",
-//     author: "Stanley Tucci",
-//     category: "Biography",
-//   },
-
-//   {
-//     id: "ab125",
-//     img: "https://images-na.ssl-images-amazon.com/images/I/41GlPC9yjzS._SX329_BO1,204,203,200_.jpg",
-//     title: "Bourdain: The Definitive Oral Biography",
-//     author: "Laurie Woolever",
-//     category: "Food",
-//   },
-
-//   {
-//     id: "ab125",
-//     img: "https://images-na.ssl-images-amazon.com/images/I/41GlPC9yjzS._SX329_BO1,204,203,200_.jpg",
-//     title: "Titulo de prueba",
-//     author: "Laurie Woolever",
-//     category: "Food",
-//   },
-// ];
+// PROBAR ESTO
+// const url = `/food/${filteredBook.id}`;
 
 function FoodBooks() {
+
   return (
     <div>
       {books
@@ -51,7 +21,7 @@ function FoodBooks() {
             <h1 className="book-title">{filteredBook.title}</h1>
             <h4>{filteredBook.author}</h4>
             <p className="Categoria">Genero: {filteredBook.category}</p>
-            <a href={filteredBook.url}>
+            <a href={filteredBook.id}>
               <Button className="btn-comprar">Comprar</Button>
             </a>
           </article>
@@ -70,7 +40,6 @@ function FoodList() {
             img={book.img}
             title={book.title}
             author={book.author}
-            id={book.id}
             category={book.category}
           />
         ))}
