@@ -12,6 +12,7 @@ import Contacto from "./Contacto";
 import Cart from "./Cart";
 import Footer from "./Footer";
 import Hero from "./Hero";
+import QuienesSomos from "./QuieneSomos";
 
 function App() {
   return (
@@ -19,10 +20,10 @@ function App() {
       <div className="App">
         {/* <Route exact path="/" component={Home} /> */}
         <Nav />
-        <Hero />
         <Switch>
           <Route exact path="/" component={Home} />{" "}
           {/* components tipo screen */}
+          <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/catalogo" component={BookList} />
           <Route path="/comprar/:idUrl" component={Comprar} />
           <Route path="/contacto" component={Contacto} />

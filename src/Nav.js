@@ -20,6 +20,11 @@ class Nav extends Component {
         </h2>
         <ul className="header-nav-list">
           <li>
+            <StyledNavLink to="/quienes-somos" className="HeroLink">
+              Quienes Somos
+            </StyledNavLink>
+          </li>
+          <li>
             <StyledNavLink to="/catalogo" className="HeroLink">
               Catalogo
             </StyledNavLink>

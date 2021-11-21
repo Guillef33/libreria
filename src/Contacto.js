@@ -27,10 +27,11 @@ function Contacto() {
   return (
     <>
       <div className="title">
-        <h1>Pagina Contacto</h1>
+        <h1>Escribinos solicitando el libro que buscas</h1>
+        <p>Este formulario envia mails a guillef33@gmail.com usando el servicio emailjs</p>
       </div>
-      <div className="container">
-        <form onSubmit={sendEmail}>
+      <div className="container form-wrapper">
+        <form onSubmit={sendEmail} className="estilos-formulario">
           <div className="form-group">
             <label for="nameImput">Name</label>
             <input
