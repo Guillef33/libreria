@@ -31,12 +31,17 @@ class Nav extends Component {
           </li>
           <li>
             <StyledNavLink to="/food" className="HeroLink">
-             Food Books
+              Food Books
             </StyledNavLink>
           </li>
           <li>
             <StyledNavLink to="/names" className="HeroLink">
               Name Test
+            </StyledNavLink>
+          </li>
+          <li>
+            <StyledNavLink to="/music" className="HeroLink">
+              Music
             </StyledNavLink>
           </li>
           <li>

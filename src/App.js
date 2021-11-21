@@ -15,6 +15,7 @@ import Hero from "./Hero";
 import QuienesSomos from "./QuieneSomos";
 import Names from "./Names";
 import FoodList from "./FoodBooks";
+import MusicList from "./MusicBooks";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/cart" component={Cart} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
+          <Route path="/music" component={MusicList} />
         </Switch>
       </div>
       <Footer />
