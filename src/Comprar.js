@@ -19,25 +19,30 @@ const BookDescription = (props) => {
   const { title, author } = props; // object destructuring the properties
   const [count, setCount] = useState(0);
 
+  function decrementCount () {
+    setCount((prevCount) => prevCount - 1);
+  }
+
+    function increaseCount() {
+      setCount((prevCount) => prevCount + 1);
+    }
+
+
   return (
     <div className="product-card">
       <div className="book-wrapper">
         <h2>{title}</h2>
         <h4>Autor: {author}</h4>
         <div className="btnComprarWrapper">
-          <button className="btnComprar">Agregar al carrito</button>
-          <button className="btnComprar" onClick={() => setCount(count + 1)}>
-            {" "}
-            {count}
+          <button className="btnComprar" onClick={decrementCount}>
+            -
+          </button>
+          <button className="btnComprar">{count}</button>
+          <button className="btnComprar" onClick={increaseCount}>
+            +
           </button>
         </div>
-        <button
-          onClick={() =>
-            props.sign == "+" ? props.updateCount(1) : props.updateCount(-1)
-          }
-        >
-          {props.sign}
-        </button>
+        <button className="btnComprar ">Agregar al carrito</button>
       </div>
     </div>
   );
