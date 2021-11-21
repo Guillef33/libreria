@@ -13,6 +13,8 @@ import Cart from "./Cart";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import QuienesSomos from "./QuieneSomos";
+import Names from "./Names";
+import FoodList from "./FoodBooks";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/comprar/:idUrl" component={Comprar} />
           <Route path="/contacto" component={Contacto} />
           <Route path="/cart" component={Cart} />
+          <Route path="/names" component={Names} />
+          <Route path="/food" component={FoodList} />
         </Switch>
       </div>
       <Footer />

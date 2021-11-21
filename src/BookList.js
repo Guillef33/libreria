@@ -48,7 +48,9 @@ const Book = (props) => {
       </div>
       <h1 className="book-title">{title}</h1>
       <h4>{author}</h4>
-      <p className="Categoria" onClick={wantedCategory}>Genero: {category}</p>
+      <p className="Categoria" onClick={wantedCategory}>
+        Genero: {category}
+      </p>
       <a href={url}>
         <Button className="btn-comprar">Comprar</Button>
       </a>
@@ -69,6 +71,7 @@ function BookList() {
             category={book.category}
           />
         ))}
+
       </section>
     </>
   );

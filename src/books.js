@@ -23,6 +23,14 @@ const books = [
     title: "Bourdain: The Definitive Oral Biography",
     author: "Laurie Woolever",
     category: "Food",
+  },
+  
+  {
+    id: "ab125",
+    img: "https://images-na.ssl-images-amazon.com/images/I/41GlPC9yjzS._SX329_BO1,204,203,200_.jpg",
+    title: "Otro libro de food",
+    author: "Food Woolever",
+    category: "Food",
   }
 ];
 
