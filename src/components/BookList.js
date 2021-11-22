@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
-import books from "./books";
-import { Button } from "./Button";
+import books from "./components/books";
+import { Button } from "./components/Button";
 
 //CSS
 import "./index.css";

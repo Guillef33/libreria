@@ -1,6 +1,6 @@
 import React from "react";
-import Book from './Book';
-import books from "./books";
+import Book from './components/Book';
+import books from "./components/books";
 import BookList from "./BookList";
 
 function ProductosRelacionados() {

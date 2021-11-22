@@ -5,7 +5,7 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-import { StyledNavLink } from "./StyledNavLink";
+import { StyledNavLink } from "./components/StyledNavLink";
 
 // import logo from "logo.svg";
 

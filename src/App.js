@@ -11,7 +11,7 @@ import Home from "./Home";
 import Contacto from "./Contacto";
 import Cart from "./Cart";
 import Footer from "./Footer";
-import Hero from "./Hero";
+import Hero from "./components/Hero";
 import QuienesSomos from "./QuieneSomos";
 import Names from "./Names";
 import FoodList from "./FoodBooks";

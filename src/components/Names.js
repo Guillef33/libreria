@@ -1,5 +1,5 @@
 import React from "react";
-import books from "./books";
+import books from "./components/books";
 
 //CSS
 import "./index.css";

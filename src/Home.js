@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
+import { CarouselControl } from "reactstrap";
 
 //stateless function component
 // always return JSX
 import BookList from "./BookList";
-import Hero from "./Hero";
+import Hero from "./components/Hero";
+
+
 
 
 //CSS
@@ -15,6 +18,7 @@ function Home() {
     <>
       <Hero />
       <BookList />
+
     </>
   );
 }

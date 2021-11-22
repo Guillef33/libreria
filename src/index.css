@@ -100,7 +100,7 @@ color:black;
 
 .book {
   background: white;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -117,6 +117,10 @@ color:black;
 
 .book img {
   width: 200px;
+}
+
+.book-wrapper {
+  padding: 30px;
 }
 
 footer {
@@ -186,4 +190,11 @@ padding: 10px 20px;
   
 }
 
+.breadcrumbs {
+  padding: 30px 0px;
+}
+
+.breadcrumbs h3 {
+  font-size: 12px;
+}
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import books from "./books";
+import books from "./components/books";
+
+import { Button } from './components/Button'
 
 import ProductosRelacionados from "./ProductosRelacionados";
 //CSS
@@ -34,15 +36,15 @@ const BookDescription = (props) => {
         <h2>{title}</h2>
         <h4>Autor: {author}</h4>
         <div className="btnComprarWrapper">
-          <button className="btnComprar" onClick={decrementCount}>
+          <Button className="btnComprar" onClick={decrementCount}>
             -
-          </button>
+          </Button>
           <button className="btnComprar">{count}</button>
-          <button className="btnComprar" onClick={increaseCount}>
+          <Button className="btnComprar" onClick={increaseCount}>
             +
-          </button>
+          </Button>
         </div>
-        <button className="btnComprar ">Agregar al carrito</button>
+        <Button className="btnComprar ">Agregar al carrito</Button>
       </div>
     </div>
   );
@@ -62,8 +64,10 @@ function Comprar() {
 
   return (
     <>
-      <div className="title">
-        <h3>Estas comprando {requestedBook.title}</h3>
+      <div className="container breadcrumbs">
+        <h3>
+          Estas comprando / {requestedBook.category}   /  {requestedBook.title}
+        </h3>
       </div>
       <div className="product-wrapper">
         <>
