@@ -22,7 +22,7 @@ const UseStateArray = () => {
           </div>
         );
       })}
-      <button className="btn" onClick={() => setPeople([])}>
+      <button className="btn" onClick={() => setPeople([])} style={{width: "100%"}}>
         clear items
       </button>
     </>

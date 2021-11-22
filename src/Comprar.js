@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import books from "./components/books";
 
-import { Button } from './components/Test'
+import { Button } from './components/Button'
 
 import ProductosRelacionados from "./ProductosRelacionados";
 //CSS

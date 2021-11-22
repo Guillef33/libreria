@@ -30,8 +30,8 @@ const Book = (props) => {
          {/* Aca se podria hacer algo bueno con componentes */}
          <a href={url}>
            <div className="hoverState" style={style}>
-             <input name="talle" type="checkbox" />
-             <input name="color" type="checkbox" />
+             {/* <input name="talle" type="checkbox" />
+             <input name="color" type="checkbox" /> */}
              {/* Incluir el href en el boton? */}
              <Button className="btn-comprar">Comprar</Button>
            </div>
@@ -58,8 +58,9 @@ function BookList() {
             author={book.author}
             id={book.id}
             category={book.category}
+            // Agregue esto porque salia un error de agregar una key a la bookList
+            key={book.id}
           />
-
         ))}
       </section>
     </>
