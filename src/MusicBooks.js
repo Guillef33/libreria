@@ -1,5 +1,4 @@
 import React from "react";
-import Book from "./components/Book";
 import books from "./components/books";
 
 import { Button } from "./components/Button";

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import books from "./components/books";
 
-import { Button } from './components/Button'
+import { Button } from './components/Test'
 
 import ProductosRelacionados from "./ProductosRelacionados";
 //CSS
@@ -33,7 +33,7 @@ const BookDescription = (props) => {
   return (
     <div className="product-card">
       <div className="book-wrapper">
-        <h2>{title}</h2>
+        <h2 className="book-title">{title}</h2>
         <h4>Autor: {author}</h4>
         <div className="btnComprarWrapper">
           <Button className="btnComprar" onClick={decrementCount}>
