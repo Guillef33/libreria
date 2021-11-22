@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDom from "react-dom";
-import books from "./components/books";
-import { Button } from "./components/Button";
+import books from "./books";
+import { Button } from "./Button";
 
 //CSS
-import "./index.css";
+import "../index.css";
 
 // Constants
 

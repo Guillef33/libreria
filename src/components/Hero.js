@@ -1,7 +1,7 @@
 import React from "react";
 
 //CSS
-import "./index.css";
+import "../index.css";
 
 function Hero() {
   return (

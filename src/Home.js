@@ -4,7 +4,7 @@ import { CarouselControl } from "reactstrap";
 
 //stateless function component
 // always return JSX
-import BookList from "./BookList";
+import BookList from "./components/BookList";
 import Hero from "./components/Hero";
 
 

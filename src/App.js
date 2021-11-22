@@ -4,16 +4,15 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Templates
 import Nav from "./Nav";
 // Components
-import BookList from "./BookList";
-// Views
 import Comprar from "./Comprar";
 import Home from "./Home";
 import Contacto from "./Contacto";
 import Cart from "./Cart";
 import Footer from "./Footer";
 import Hero from "./components/Hero";
+import BookList from "./components/BookList";
 import QuienesSomos from "./QuieneSomos";
-import Names from "./Names";
+import Names from "./components/Names";
 import FoodList from "./FoodBooks";
 import MusicList from "./MusicBooks";
 

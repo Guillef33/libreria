@@ -1,8 +1,4 @@
 import React from "react";
-import books from "./components/books";
-
-//CSS
-import "./index.css";
 
 const names = ['James', 'John', 'Paul', 'Ringo', 'George'];
 
