@@ -13,6 +13,7 @@ import Hero from "./components/Hero";
 import BookList from "./components/BookList";
 import QuienesSomos from "./QuieneSomos";
 import Names from "./components/Names";
+import AddBooks from "./components/AddBooks";
 import FoodList from "./FoodBooks";
 import MusicList from "./MusicBooks";
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
           <Route path="/music" component={MusicList} />
+          <Route path="/add" component={AddBooks} />
         </Switch>
       </div>
       <Footer />

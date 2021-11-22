@@ -103,6 +103,8 @@ color:black;
   /* border-radius: 1rem; */
   padding: 1rem 2rem;
   text-align: center;
+  display: flex;
+flex-direction: column;
 }
 
 .book h1 {
@@ -116,7 +118,7 @@ color:black;
 }
 
 .book img {
-  width: 200px;
+height: 300px;
 }
 
 .book-wrapper {
@@ -145,6 +147,12 @@ footer div h3 {
   font-weight: 600;
 }
 
+.titulo-home {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 2em 0;
+}
+
 .btn-comprar {
   padding: 0.5em 1em;
   border: 1px solid aliceblue;
@@ -152,12 +160,35 @@ footer div h3 {
 }
 
 .book-title {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .imageContainer {
   display: block;
   text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+
+}
+
+.imageContainer a {
+    transition: all 0.3s ease;
+
+}
+
+.imageContainer a button {
+  display: block;
+  transition: all 0.8s ease;
+
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  margin: 0;
+  border: none;
+}
+
+.imageSize {
+  height: fit-content;
 }
 
 .hero-section {

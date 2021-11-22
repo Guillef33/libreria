@@ -36,6 +36,7 @@ function MusicBooks() {
 function MusicList() {
   return (
     <>
+      {/*Esto no funciona bien, repite el mismo libro en cada row */}
       <section className="bookList">
         {books.map((Musicbook) => (
           <MusicBooks

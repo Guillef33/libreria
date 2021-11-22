@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }  from "react";
 import ReactDom from "react-dom";
 import books from "./books";
 import { Button } from "./Button";
@@ -13,24 +13,41 @@ const Book = (props) => {
 
   const url = `/comprar/${id}`;
 
-  return (
-    <article className="book">
-      <div className="imageContainer">
-        <img src={img} alt="cover" />
-      </div>
-      <h1 className="book-title">{title}</h1>
-      <h4>{author}</h4>
-      <p className="Categoria">
-        Genero: {category}
-      </p>
-      <a href={url}>
-        <Button className="btn-comprar">Comprar</Button>
-      </a>
-    </article>
-  );
+  const [style, setStyle] = useState({ display: "none" });
+
+   return (
+     <article
+       className="book productBox"
+       onMouseEnter={(e) => {
+         setStyle({ display: "block" });
+       }}
+       onMouseLeave={(e) => {
+         setStyle({ display: "none" });
+       }}
+     >
+       <div className="imageContainer">
+         <img src={img} alt="cover" className="imageSize" />
+         {/* Aca se podria hacer algo bueno con componentes */}
+         <a href={url}>
+           <div className="hoverState" style={style}>
+             <input name="talle" type="checkbox" />
+             <input name="color" type="checkbox" />
+             {/* Incluir el href en el boton? */}
+             <Button className="btn-comprar">Comprar</Button>
+           </div>
+         </a>
+       </div>
+       <h1 className="book-title">{title}</h1>
+       <h4>{author}</h4>
+       <p className="Categoria" style={{ margin: "auto" }}>
+         Genero: {category}
+       </p>
+     </article>
+   );
 };
 
 function BookList() {
+
   return (
     <>
       <section className="bookList">
@@ -42,6 +59,7 @@ function BookList() {
             id={book.id}
             category={book.category}
           />
+
         ))}
       </section>
     </>

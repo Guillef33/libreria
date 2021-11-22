@@ -6,6 +6,8 @@ import { CarouselControl } from "reactstrap";
 // always return JSX
 import BookList from "./components/BookList";
 import Hero from "./components/Hero";
+import MusicBook from "./MusicBooks";
+
 
 
 
@@ -17,8 +19,10 @@ function Home() {
   return (
     <>
       <Hero />
+      {/* <h2 className="titulo-home">El genero que mas te gusta</h2>
+      <MusicBook /> */}
+      <h2 className="titulo-home">Novedades del ultimo mes</h2>
       <BookList />
-
     </>
   );
 }
