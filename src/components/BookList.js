@@ -2,6 +2,14 @@ import React, { useState }  from "react";
 import ReactDom from "react-dom";
 import books from "./books";
 import { Button } from "./Button";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
+import { StyledNavLink } from "../components/StyledNavLink";
+
 
 //CSS
 import "../index.css";
@@ -28,14 +36,15 @@ const Book = (props) => {
        <div className="imageContainer">
          <img src={img} alt="cover" className="imageSize" />
          {/* Aca se podria hacer algo bueno con componentes */}
-         <a href={url}>
+         {/* Aca debo usar NavLink con destino {url}  */}
+         <NavLink to={url}>
            <div className="hoverState" style={style}>
              {/* <input name="talle" type="checkbox" />
              <input name="color" type="checkbox" /> */}
              {/* Incluir el href en el boton? */}
              <Button className="btn-comprar">Comprar</Button>
            </div>
-         </a>
+         </NavLink>
        </div>
        <h1 className="book-title">{title}</h1>
        <h4>{author}</h4>

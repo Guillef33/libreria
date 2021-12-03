@@ -1,7 +1,7 @@
 import React from "react";
 import books from './books'
 
-import '../addBook.css'
+import './addBook.css'
 
 const UseStateArray = () => {
   const [people, setPeople] = React.useState(books);

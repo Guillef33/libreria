@@ -45,6 +45,11 @@ class Nav extends Component {
             </StyledNavLink>
           </li>
           <li>
+            <StyledNavLink to="/checkout" className="HeroLink">
+              Checkout
+            </StyledNavLink>
+          </li>
+          <li>
             <StyledNavLink to="/contacto" className="HeroLink">
               Contacto
             </StyledNavLink>

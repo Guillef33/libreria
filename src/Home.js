@@ -7,8 +7,7 @@ import { CarouselControl } from "reactstrap";
 import BookList from "./components/BookList";
 import Hero from "./components/Hero";
 import MusicBook from "./MusicBooks";
-
-
+import SearchBar from "./components/SearchBar";
 
 
 
@@ -16,6 +15,7 @@ import MusicBook from "./MusicBooks";
 import "./index.css";
 
 function Home() {
+
   return (
     <>
       <Hero />
@@ -23,6 +23,7 @@ function Home() {
       <MusicBook /> */}
       <h2 className="titulo-home">Novedades del ultimo mes</h2>
       <BookList />
+      <SearchBar />
     </>
   );
 }

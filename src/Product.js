@@ -50,7 +50,7 @@ const BookDescription = (props) => {
   );
 };
 
-function Comprar() {
+function Product() {
   let { idUrl } = useParams();
 
   console.log(books);
@@ -86,4 +86,4 @@ function Comprar() {
   );
 }
 
-export default Comprar;
+export default Product;
