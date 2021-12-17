@@ -27,7 +27,7 @@ function Contacto() {
   return (
     <>
       <div className="title">
-        <h1>Escribinos solicitando el libro que buscas</h1>
+        <h3>Escribinos solicitando el libro que buscas</h3>
         <p>Este formulario envia mails a guillef33@gmail.com usando el servicio emailjs</p>
       </div>
       <div className="container form-wrapper">

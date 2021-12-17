@@ -9,7 +9,7 @@ function QuienesSomos() {
   return (
     <>
       <div className="container quienes-somos">
-        <h2>Somos una libreria de la ciudad de Buenos Aires</h2>
+        <h3>Somos una libreria de la ciudad de Buenos Aires</h3>
         <h3>Nuestra historia</h3>
         <p>
           La librería El Ateneo es una marca tradicional, creada en 1912, que
