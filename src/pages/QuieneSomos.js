@@ -3,7 +3,7 @@ import React from "react";
 import Contacto from "./Contacto";
 
 //CSS
-import "./index.css";
+import "../index.css";
 
 function QuienesSomos() {
   return (
@@ -34,7 +34,6 @@ function QuienesSomos() {
           entradas.{" "}
         </p>
       </div>
-      <Contacto />
     </>
   );
 }

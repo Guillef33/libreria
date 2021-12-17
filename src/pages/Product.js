@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import books from "./components/books";
+import books from "../components/books";
 
-import { Button } from './components/Button'
+import { Button } from '../components/Button'
 
-import ProductosRelacionados from "./ProductosRelacionados";
+import ProductosRelacionados from "../components/ProductosRelacionados";
 //CSS
-import "./index.css";
+import "../index.css";
 // Constants
 const BookImage = (props) => {
   const { img } = props; // objet destructuring the properties

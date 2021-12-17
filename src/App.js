@@ -4,19 +4,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Templates
 import Nav from "./Nav";
 // Components
-import Product from "./Product";
-import Home from "./Home";
-import Contacto from "./Contacto";
-import Checkout from "./Checkout";
+import Product from "./pages/Product";
+import Home from "./pages/Home";
+import Contacto from "./pages/Contacto";
+import Checkout from "./pages/Checkout";
 import Footer from "./Footer";
-import Hero from "./components/Hero";
 import BookList from "./components/BookList";
-import QuienesSomos from "./QuieneSomos";
+import QuienesSomos from "./pages/QuieneSomos";
 import Names from "./components/Names";
 import AddBooks from "./components/AddBooks";
-import FoodList from "./FoodBooks";
-import MusicBooks from "./MusicBooks";
-import BioBooks from "./BioBooks";
+import FoodList from "./pages/FoodBooks";
+import MusicBooks from "./pages/MusicBooks";
+import BioBooks from "./pages/BioBooks";
 import SearchBar from "./components/SearchBar";
 
 

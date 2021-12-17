@@ -1,9 +1,9 @@
 import React from "react";
-import books from "./components/books";
-import Book from "./components/Book";
+import books from "../components/books";
+import Book from "../components/Book";
 
 
-import { Button } from "./components/Button";
+import { Button } from "../components/Button";
 
 function updateCarrito () {
   console.log(`Se agrego al carrito`);

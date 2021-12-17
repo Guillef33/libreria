@@ -4,16 +4,16 @@ import { CarouselControl } from "reactstrap";
 
 //stateless function component
 // always return JSX
-import BookList from "./components/BookList";
-import Hero from "./components/Hero";
+import BookList from "../components/BookList";
+import Hero from "../components/Hero";
 import MusicBook from "./MusicBooks";
-import SearchBar from "./components/SearchBar";
-import books from "./components/books";
-import Book from "./components/Book";
+import SearchBar from "../components/SearchBar";
+import books from "../components/books";
+import Book from "../components/Book";
 
 
 //CSS
-import "./index.css";
+import "../index.css";
 
 function Home() {
 

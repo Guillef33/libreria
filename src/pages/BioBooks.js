@@ -1,8 +1,8 @@
 import React from "react";
-import books from "./components/books";
-import Book from './components/Book'
+import books from "../components/books";
+import Book from '../components/Book'
 
-import { Button } from "./components/Button";
+import { Button } from "../components/Button";
 
 // PROBAR ESTO
 // const url = `/food/${filteredBook.id}`;
@@ -13,7 +13,7 @@ function FoodBooks() {
     <div className="bookList">
       
       {books
-        .filter((book) => book.category === "Food")
+        .filter((book) => book.category === "Biography")
         .map((filteredBook) => (
           <Book
             img={filteredBook.img}
