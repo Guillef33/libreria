@@ -31,8 +31,6 @@ function BookList() {
             key={book.id}
           />
         ))}
-
-
       </section>
     </>
   );

@@ -7,6 +7,7 @@ const books = [
     title: "The Storyteller: Tales of Life and Music",
     author: "David Grohl",
     category: "Music",
+    isNovedad: true
   },
 
   {
@@ -15,6 +16,7 @@ const books = [
     title: "Taste: My Life Through Food",
     author: "Stanley Tucci",
     category: "Biography",
+    isNovedad: true
   },
 
   {
@@ -23,6 +25,7 @@ const books = [
     title: "Bourdain: The Definitive Oral Biography",
     author: "Laurie Woolever",
     category: "Food",
+    isNovedad: true
   },
 
   {
@@ -31,6 +34,7 @@ const books = [
     title: "Gastro Obscura: A Food Adventurer's Guide (Atlas Obscura)",
     author: "Cecily Wong",
     category: "Food",
+    isNovedad: false
   },
   {
     id: "5",
@@ -38,6 +42,7 @@ const books = [
     title: "Music, Math, and Mind: The Physics and Neuroscience of Music",
     author: "David Sulzer",
     category: "Music",
+    isNovedad: false
   },
   {
     id: "6",
@@ -45,6 +50,7 @@ const books = [
     title: "American Popular Music: From Minstrelsy to MP3",
     author: "Larry Starr",
     category: "Music",
+    isNovedad: false
   },
 ];
 

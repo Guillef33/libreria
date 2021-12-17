@@ -4,11 +4,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Templates
 import Nav from "./Nav";
 // Components
-import Comprar from "./Product";
+import Product from "./Product";
 import Home from "./Home";
 import Contacto from "./Contacto";
 import Checkout from "./Checkout";
-import Product from "./Product";
 import Footer from "./Footer";
 import Hero from "./components/Hero";
 import BookList from "./components/BookList";
@@ -18,6 +17,8 @@ import AddBooks from "./components/AddBooks";
 import FoodList from "./FoodBooks";
 import MusicBooks from "./MusicBooks";
 import BioBooks from "./BioBooks";
+import SearchBar from "./components/SearchBar";
+
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           {/* components tipo screen */}
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/catalogo" component={BookList} />
-          <Route path="/comprar/:idUrl" component={Comprar} />
+          <Route path="/product/:idUrl" component={Product} />
           <Route path="/contacto" component={Contacto} />
           <Route path="/cart" component={Product} />
           <Route path="/names" component={Names} />
@@ -39,6 +40,7 @@ function App() {
           <Route path="/music" component={MusicBooks} />
           <Route path="/add" component={AddBooks} />
           <Route path="/checkout" component={Checkout} />
+          <Route path="/search" component={SearchBar} />
         </Switch>
       </div>
       <Footer />

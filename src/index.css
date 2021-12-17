@@ -229,3 +229,12 @@ padding: 10px 20px;
   font-size: 12px;
 }
 
+.isNovedad article {
+  border-top: 4px solid cadetblue;
+}
+
+.isNovedad article:before {
+  content: 'Novedad';
+  padding: 5px;
+}
+

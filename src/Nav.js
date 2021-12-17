@@ -24,9 +24,14 @@ class Nav extends Component {
               Quienes Somos
             </StyledNavLink>
           </li>
-          <li>
+          {/* <li>
             <StyledNavLink to="/catalogo" className="HeroLink">
               Catalogo
+            </StyledNavLink>
+          </li> */}
+          <li>
+            <StyledNavLink to="/search" className="HeroLink">
+              Buscador 
             </StyledNavLink>
           </li>
           <li>
@@ -44,11 +49,12 @@ class Nav extends Component {
               Biography
             </StyledNavLink>
           </li>
-          <li>
+          {/* <li>
             <StyledNavLink to="/add" className="HeroLink">
               Agregar
             </StyledNavLink>
-          </li>
+          </li> */}
+
           <li>
             <StyledNavLink to="/checkout" className="HeroLink">
               Checkout

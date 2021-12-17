@@ -12,7 +12,7 @@ import { Button } from "./Button";
 const Book = (props) => {
   const { img, title, author, id, category } = props; // objet destructuring the properties
 
-  const url = `/comprar/${id}`;
+  const url = `/product/${id}`;
 
   const [style, setStyle] = useState({ display: "none" });
 
