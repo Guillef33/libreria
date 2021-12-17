@@ -13,7 +13,7 @@ function SearchBar(props) {
           setSearchTerm(event.target.value);
         }}
       />
-
+      
       {books
         .filter((val) => {
           if (searchTerm === "") {

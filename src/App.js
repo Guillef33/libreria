@@ -16,7 +16,8 @@ import QuienesSomos from "./QuieneSomos";
 import Names from "./components/Names";
 import AddBooks from "./components/AddBooks";
 import FoodList from "./FoodBooks";
-import MusicList from "./MusicBooks";
+import MusicBooks from "./MusicBooks";
+import BioBooks from "./BioBooks";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
           <Route path="/cart" component={Product} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
-          <Route path="/music" component={MusicList} />
+          <Route path="/biography" component={BioBooks} />
+          <Route path="/music" component={MusicBooks} />
           <Route path="/add" component={AddBooks} />
           <Route path="/checkout" component={Checkout} />
         </Switch>

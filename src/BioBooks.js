@@ -13,7 +13,7 @@ function FoodBooks() {
     <div className="bookList">
       
       {books
-        .filter((book) => book.category === "Food")
+        .filter((book) => book.category === "Biography")
         .map((filteredBook) => (
           <Book
             img={filteredBook.img}
