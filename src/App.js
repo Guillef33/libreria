@@ -17,6 +17,7 @@ import FoodList from "./pages/FoodBooks";
 import MusicBooks from "./pages/MusicBooks";
 import BioBooks from "./pages/BioBooks";
 import SearchBar from "./components/SearchBar";
+import Cart from "./pages/Cart";
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
           <Route path="/catalogo" component={BookList} />
           <Route path="/product/:idUrl" component={Product} />
           <Route path="/contacto" component={Contacto} />
-          <Route path="/cart" component={Product} />
+          <Route path="/product/cart" component={Cart} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
           <Route path="/biography" component={BioBooks} />

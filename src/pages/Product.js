@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import books from "../components/books";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 import { Button } from '../components/Button'
 
@@ -18,7 +24,7 @@ const BookImage = (props) => {
 };
 
 const BookDescription = (props) => {
-  const { title, author } = props; // object destructuring the properties
+  const { title, author, id  } = props; // object destructuring the properties
   const [count, setCount] = useState(0);
 
   function decrementCount () {
@@ -28,6 +34,8 @@ const BookDescription = (props) => {
     function increaseCount() {
       setCount((prevCount) => prevCount + 1);
     }
+
+      const url = `/product/cart/${id}`;
 
 
   return (
@@ -43,8 +51,10 @@ const BookDescription = (props) => {
           <Button className="btnComprar" onClick={increaseCount}>
             +
           </Button>
-        </div>
-        <Button className="btnComprar ">Agregar al carrito</Button>
+        </div>        
+        <NavLink to={url}>
+          <Button className="btnComprar" >Agregar al carrito</Button>
+        </NavLink>
       </div>
     </div>
   );
