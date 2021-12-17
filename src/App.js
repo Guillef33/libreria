@@ -33,7 +33,7 @@ function App() {
           <Route path="/catalogo" component={BookList} />
           <Route path="/product/:idUrl" component={Product} />
           <Route path="/contacto" component={Contacto} />
-          <Route path="/product/cart" component={Cart} />
+          <Route path="/cart" component={Cart} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
           <Route path="/biography" component={BioBooks} />

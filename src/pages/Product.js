@@ -35,7 +35,7 @@ const BookDescription = (props) => {
       setCount((prevCount) => prevCount + 1);
     }
 
-      const url = `/product/cart/${id}`;
+      const url = `/cart/${id}`;
 
 
   return (
