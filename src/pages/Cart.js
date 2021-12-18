@@ -6,16 +6,6 @@ import { useParams } from "react-router-dom";
 
 function Cart({ itemCount }) {
 
-    // let { idUrl } = useParams();
-
-    // console.log(books);
-    // let requestedBook;
-
-    // books.forEach((book) => {
-    //   if (book.id == idUrl) {
-    //     requestedBook = book;
-    //   }
-    // });
   return (
     <header className="container">
       <h1>Shopping Cart</h1>

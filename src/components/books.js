@@ -34,7 +34,7 @@ const books = [
     title: "Gastro Obscura: A Food Adventurer's Guide (Atlas Obscura)",
     author: "Cecily Wong",
     category: "Food",
-    isNovedad: false
+    isNovedad: true
   },
   {
     id: "5",

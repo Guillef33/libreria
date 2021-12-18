@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,8 +8,11 @@ import {
 import { StyledNavLink } from "./components/StyledNavLink";
 
 // import logo from "logo.svg";
-
+ 
 class Nav extends Component {
+
+  // const [isActive] = useState(window.location.href.split('/').pop());
+
   render() {
     return (
       <nav>
@@ -31,7 +34,7 @@ class Nav extends Component {
           </li> */}
           <li>
             <StyledNavLink to="/search" className="HeroLink">
-              Buscador 
+              Buscador
             </StyledNavLink>
           </li>
           <li>
@@ -55,6 +58,11 @@ class Nav extends Component {
             </StyledNavLink>
           </li> */}
 
+          <li>
+            <StyledNavLink to="/products" className="HeroLink">
+              Products API
+            </StyledNavLink>
+          </li>
           <li>
             <StyledNavLink to="/checkout" className="HeroLink">
               Checkout

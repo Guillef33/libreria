@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Templates
 import Nav from "./Nav";
 // Components
-import Product from "./pages/Product";
+import ProductPage from "./pages/Product";
 import Home from "./pages/Home";
 import Contacto from "./pages/Contacto";
 import Checkout from "./pages/Checkout";
@@ -18,7 +18,8 @@ import MusicBooks from "./pages/MusicBooks";
 import BioBooks from "./pages/BioBooks";
 import SearchBar from "./components/SearchBar";
 import Cart from "./pages/Cart";
-
+import Products from "./components/Products";
+import Product from "./components/Product";
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
           {/* components tipo screen */}
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/catalogo" component={BookList} />
-          <Route path="/product/:idUrl" component={Product} />
+          {/* <Route path="/productores/:idUrl" component={ProductPage} /> */}
+          <Route path="/products/:id" component={Product} />
+          <Route path="/products" component={Products} />
           <Route path="/contacto" component={Contacto} />
           <Route path="/cart" component={Cart} />
           <Route path="/names" component={Names} />

@@ -13,7 +13,7 @@ function FoodBooks() {
     <div className="bookList">
       
       {books
-        .filter((book) => book.category === "Food")
+        .filter((book) => book.category === "Food") // windows location y ver si matchea con esto
         .map((filteredBook) => (
           <Book
             img={filteredBook.img}
@@ -30,22 +30,22 @@ function FoodBooks() {
 }
 
 
-function FoodList() {
-  return (
-    <>
-      <section className="bookList">
-        {books.map((book) => (
-          <FoodBooks
-            img={book.img}
-            title={book.title}
-            author={book.author}
-            category={book.category}
-          />
-        ))}
-      </section>
-    </>
-  );
-}
+// function FoodList() {
+//   return (
+//     <>
+//       <section className="bookList">
+//         {books.map((book) => (
+//           <FoodBooks
+//             img={book.img}
+//             title={book.title}
+//             author={book.author}
+//             category={book.category}
+//           />
+//         ))}
+//       </section>
+//     </>
+//   );
+// }
 
 export default FoodBooks;
 

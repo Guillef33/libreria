@@ -29,24 +29,6 @@ function FoodBooks() {
   );
 }
 
-
-function FoodList() {
-  return (
-    <>
-      <section className="bookList">
-        {books.map((book) => (
-          <FoodBooks
-            img={book.img}
-            title={book.title}
-            author={book.author}
-            category={book.category}
-          />
-        ))}
-      </section>
-    </>
-  );
-}
-
 export default FoodBooks;
 
     
