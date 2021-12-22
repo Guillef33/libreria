@@ -20,6 +20,7 @@ import SearchBar from "./components/SearchBar";
 import Cart from "./pages/Cart";
 import Products from "./components/Products";
 import Product from "./components/Product";
+import PageToDo from "./pages/PageToDo";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/add" component={AddBooks} />
           <Route path="/checkout" component={Checkout} />
           <Route path="/search" component={SearchBar} />
+          <Route path="/todolist" component={PageToDo} />
         </Switch>
       </div>
       <Footer />
