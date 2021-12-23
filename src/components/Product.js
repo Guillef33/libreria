@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+// import { addCart } from '../redux/action' 
 import { useParams } from 'react-router-dom';
 import {
   BrowserRouter as Router,
@@ -14,6 +16,10 @@ const Product = () => {
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
     
+    // const dispatch = useDispatch();
+    // const addProduct = (product) => {
+    //   dispatch(addCart(product));
+    // }
 
     useEffect(() => {
         const getProduct = async () => {
@@ -45,6 +51,7 @@ const Product = () => {
               <p>{product.description}</p>
               <p>${product.price}</p>
               <StyledNavLink to="">Agregar al carrito</StyledNavLink>
+              {/* onClick={() => addProduct(product)} */}
               <StyledNavLink to="/cart">Ir al carrito</StyledNavLink>
             </div>
           </>

@@ -29,14 +29,16 @@ function App() {
         {/* <Route exact path="/" component={Home} /> */}
         <Nav />
         <Switch>
-          <Route exact path="/" component={Home} />{" "}
-          {/* components tipo screen */}
+          <Route exact path="/" component={Home} />
+          {/* Libreria */}
+          <Route path="/productores/:idUrl" component={ProductPage} />
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/catalogo" component={BookList} />
-          {/* <Route path="/productores/:idUrl" component={ProductPage} /> */}
+          <Route path="/contacto" component={Contacto} />
+          {/* API Store */}
           <Route path="/products/:id" component={Product} />
           <Route path="/products" component={Products} />
-          <Route path="/contacto" component={Contacto} />
+
           <Route path="/cart" component={Cart} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
