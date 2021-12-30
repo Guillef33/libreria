@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import books from "../components/books";
+import projects from "./projects";
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,13 +8,12 @@ import {
   NavLink,
 } from "react-router-dom";
 
-import { Button } from '../components/Button'
+import { Button } from "../Button";
 
-import ProductosRelacionados from "../components/ProductosRelacionados";
 //CSS
-import "../index.css";
+import "../../index.css";
 // Constants
-const BookImage = (props) => {
+const ProjectImage = (props) => {
   const { img } = props; // objet destructuring the properties
   return (
     <article className="book">
@@ -23,26 +22,26 @@ const BookImage = (props) => {
   );
 };
 
-const BookDescription = (props) => {
-  const { title, author, id  } = props; // object destructuring the properties
+const ProjectDescription = (props) => {
+  const { title, technology, id } = props; // object destructuring the properties
   const [count, setCount] = useState(0);
 
-  function decrementCount () {
+  function decrementCount() {
     setCount((prevCount) => prevCount - 1);
   }
 
-    function increaseCount() {
-      setCount((prevCount) => prevCount + 1);
-    }
+  function increaseCount() {
+    setCount((prevCount) => prevCount + 1);
+  }
 
-      const url = `/cart/${id}`;
-
+  const url = `/carrito/${id}`;
 
   return (
     <div className="product-card">
       <div className="book-wrapper">
         <h2 className="book-title">{title}</h2>
-        <h4>Autor: {author}</h4>
+        <h4>Proyecto: {title}</h4>
+        <h4>Tecnologia: {technology}</h4>
         <div className="btnComprarWrapper">
           <Button className="btnComprar" onClick={decrementCount}>
             -
@@ -51,24 +50,24 @@ const BookDescription = (props) => {
           <Button className="btnComprar" onClick={increaseCount}>
             +
           </Button>
-        </div>        
+        </div>
         <NavLink to={url}>
-          <Button className="btnComprar" >Agregar al carrito ahora</Button>
+          <Button className="btnComprar">Agregar al carrito ahora</Button>
         </NavLink>
       </div>
     </div>
   );
 };
 
-function Product() {
+function ProjectPage() {
   let { idUrl } = useParams();
 
-  console.log(books);
-  let requestedBook;
+  console.log(projects);
+  let requestedProjects;
 
-  books.forEach((book) => {
-    if (book.id == idUrl) {
-      requestedBook = book;
+  projects.forEach((project) => {
+    if (project.id === idUrl) {
+      requestedProjects = project;
     }
   });
 
@@ -76,24 +75,24 @@ function Product() {
     <>
       <div className="container breadcrumbs">
         <h3>
-          Estas comprando / {requestedBook.category}   /  {requestedBook.title}
+          Estas comprando / {requestedProjects.category} /{" "}
+          {requestedProjects.title}
         </h3>
       </div>
       <div className="product-wrapper">
         <>
-          <BookImage img={requestedBook.img}></BookImage>
+          <ProjectDescription
+            id={requestedProjects.id}
+            title={requestedProjects.title}
+            author={requestedProjects.url}
+          ></ProjectDescription>
         </>
         <>
-          <BookDescription
-            id={requestedBook.id}
-            title={requestedBook.title}
-            author={requestedBook.author}
-          ></BookDescription>
+          <ProjectImage img={requestedProjects.img}></ProjectImage>
         </>
       </div>
-      <ProductosRelacionados />
     </>
   );
 }
 
-export default Product;
+export default ProjectPage;

@@ -22,6 +22,10 @@ import Products from "./components/Products";
 import Product from "./components/Product";
 import PageToDo from "./pages/PageToDo";
 
+import ProjectList from "./components/portfolio/ProjectList";
+import Project from "./components/portfolio/Project";
+import ProjectPage from "./components/portfolio/ProjectPage";
+
 function App() {
   return (
     <Router>
@@ -34,10 +38,15 @@ function App() {
           <Route path="/productores/:idUrl" component={ProductPage} />
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/catalogo" component={BookList} />
+
+          <Route path="/projects" component={ProjectList} />
+          <Route path="/projectos/:idUrl" component={ProjectPage} />
+
           <Route path="/contacto" component={Contacto} />
           {/* API Store */}
           <Route path="/products/:id" component={Product} />
           <Route path="/products" component={Products} />
+
           <Route path="/cart" component={Cart} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />

@@ -161,6 +161,12 @@ footer div h3 {
 
 .book-title {
   font-size: 1em;
+  color: black;
+}
+
+.project-title {
+  font-size: 2em;
+  color: red;
 }
 
 .imageContainer {
