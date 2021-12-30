@@ -5,8 +5,7 @@ function Contacto() {
   function sendEmail (e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    emailjs.sendForm(
         "gmail",
         "template_iurxj7h",
         e.target,
@@ -28,7 +27,7 @@ function Contacto() {
     <>
       <div className="title">
         <h3>Escribinos solicitando el libro que buscas</h3>
-        <p>Este formulario envia mails a guillef33@gmail.com usando el servicio emailjs</p>
+        <p>Este formulario envia mails a 800golpeseditorial@gmail.com usando el servicio emailjs</p>
       </div>
       <div className="container form-wrapper">
         <form onSubmit={sendEmail} className="estilos-formulario">
@@ -49,7 +48,7 @@ function Contacto() {
               type="email"
               className="form-control"
               id="emailImput"
-              placeholder="email@domain.com"
+              placeholder="Escribi tu email"
             />
           </div>
           <input type="submit" value="Submit" className="btn btn-primary" />

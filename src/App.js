@@ -38,7 +38,6 @@ function App() {
           {/* API Store */}
           <Route path="/products/:id" component={Product} />
           <Route path="/products" component={Products} />
-
           <Route path="/cart" component={Cart} />
           <Route path="/names" component={Names} />
           <Route path="/food" component={FoodList} />
