@@ -5,12 +5,13 @@ import Project from "./Project";
 
 //CSS
 import "../../index.css";
+import "./project.css";
 
 function BookList() {
 
   return (
     <>
-      <section className="bookList">
+      <section className="projectList">
         {projects.map((project) => (
           <Project
             img={project.img}

@@ -12,6 +12,7 @@ import { Button } from "../Button";
 
 //CSS
 import "../../index.css";
+import './project.css';
 // Constants
 const ProjectImage = (props) => {
   const { img } = props; // objet destructuring the properties

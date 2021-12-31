@@ -17,7 +17,7 @@ const Project = (props) => {
 
   return (
     <article
-      className="book productBox"
+      className="project productBox"
       onMouseEnter={(e) => {
         setStyle({ display: "block" });
       }}
